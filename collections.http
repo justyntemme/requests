@@ -5,8 +5,8 @@ Content-Type: application/json
 Accept: application/json; charset=UTF-8
 
 {
-  "password": "{{pcSecret}}",
-  "username": "{{pcIdentity}}"
+  "password": "{{PCSECRET}}",
+  "username": "{{PCIDENTITY}}"
 }
 
 
