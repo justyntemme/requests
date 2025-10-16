@@ -5,9 +5,11 @@ import ./auth.http
 
 ### getAllImages
 
+@id = sha256:ddc732eb10e7cc7acb4f6394cdda19c4611a7ead636342279d3f9fc955f3d6c6
+
 run #auth
 
-GET {{HOSTNAME}}/api/v1/images?id=sha256:ddc732eb10e7cc7acb4f6394cdda19c4611a7ead636342279d3f9fc955f3d6c6 HTTP/1.1
+GET {{HOSTNAME}}/api/v1/images?id={{id}} HTTP/1.1
 Authorization: Bearer {{auth.response.body.token}}
 Content-Type: application/json
 
